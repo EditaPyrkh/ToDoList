@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap" rel="stylesheet">
+    <title>Task panel</title>
+    <style>
+        *{
+            font-family: 'Kanit', sans-serif;
+        }
+        body {
+            display: grid;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .mainBlock {
+            max-width: 50em;
+            margin: 4rem;
+            padding: 0px 30px;
+            border: 1px solid rgb(177, 177, 177);
+            border-radius: 8px;
+        }
+        form {
+            display: grid;
+        }
+        input, textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid rgb(177, 177, 177);
+        }
+        button {
+            margin: 20px;
+            padding: 8px;
+            background-color: rgb(77, 131, 207);
+            border: 0;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(60, 106, 171);
+        }
+        button:active {
+            -webkit-transform: scale(0.94);
+            transform: scale(0.94);
+        }
+
+        li {
+            border: 1px solid rgb(177, 177, 177);
+            border-radius: 8px;
+            padding: 10px;
+            list-style: none;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainBlock">
+        <h1>Add new task</h1>
+        <form name="addTask">
+            <input type="text" name="title" id="title" placeholder="Task title">
+            <textarea name="body" id="body" placeholder="Task body"></textarea>
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <div class="tasks-list-section mt-5">
+        <div class="container">
+          <ul class="list-group"></ul>
+        </div>
+      </div>
+</body>
+<script src="./script.js"></script>
+</html>
