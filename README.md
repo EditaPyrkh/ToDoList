@@ -14,4 +14,4 @@ What could be improved or added :
 
 
 //HOW TO START APP :
-Just download, unzip the folder and click on index.html
+Just download, unzip the folder and double click on index.html
